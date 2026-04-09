@@ -1,153 +1,183 @@
 # 🚀 Flutter Production Skill
 
-> A comprehensive, production-grade reference skill for Flutter development — covering architecture, state management, security, CI/CD, monetization, and 40+ advanced topics.
+> The most complete Flutter production skill for Claude AI — 45 reference files covering every aspect of building, shipping, and maintaining real-world Flutter apps.
+
+Built by **Abdul Manan** — Flutter Developer 
 
 ---
 
-## 📖 About
+## ⚡ Install in 3 Steps
 
-This skill is designed to guide AI assistants (and developers) toward writing **clean, scalable, ship-ready Flutter code** — not toy examples. Every pattern, snippet, and decision guide here reflects real-world production experience across Play Store and App Store deployments.
-
-Whether you're building a solo utility app or a large-scale enterprise product, this skill enforces the right architecture, the right patterns, and the right tools from day one.
-
----
-
-## 🎯 What This Skill Covers
-
-This skill triggers on **any** Flutter question across all of these domains:
-
-| Category | Topics |
-|----------|--------|
-| **Architecture** | Clean Architecture, MVVM, MVC, Feature-first |
-| **State Management** | GetX, Riverpod, BLoC, Provider |
-| **UI & Design** | Layouts, responsive design, theming, animations, Custom Painter |
-| **Navigation** | GoRouter, deep linking, dynamic links |
-| **Networking** | REST APIs, Dio, serialization, caching, rate limiting |
-| **Backend** | Firebase, Supabase, real-time, MQTT, Socket.IO, SignalR |
-| **Authentication** | OAuth, biometric (fingerprint/Face ID), FCM push notifications |
-| **Storage** | Local storage, caching, offline support, Hive, SQLCipher, AES |
-| **Security** | Code obfuscation, SSL pinning, `flutter_secure_storage` |
-| **Performance** | Isolates, DevTools, list virtualization, startup time |
-| **Monetization** | AdMob, Yandex Ads, in-app purchases, RevenueCat, Stripe, PayPal |
-| **Localization** | ARB files, RTL support, multi-language |
-| **Notifications** | FCM, local/scheduled, background, grouped, action buttons |
-| **Testing** | Unit, widget, integration tests |
-| **CI/CD** | GitHub Actions, Codemagic, Fastlane, app signing |
-| **Deployment** | Play Store, App Store, ASO, app size, startup optimization |
-| **Device Features** | Camera, GPS, platform channels, background services |
-| **Observability** | Logging, Crashlytics, Sentry, Datadog, analytics |
-| **Code Quality** | Linting, custom lint rules, metrics, naming conventions |
-| **Dart 3** | Records, patterns, sealed classes, switch expressions |
-| **UX Patterns** | Skeleton screens, empty states, error states, paywall strategy |
-| **Onboarding** | Feature discovery, first-run flows |
-| **Modularization** | Melos, internal packages, mono-repo setup |
+1. Clone repo file
+2. Go to **Claude.ai → Settings → Skills → Upload Skill**
+3. Done — Claude now answers every Flutter question at production level
 
 ---
 
-## 📁 Repository Structure
+## 🧠 What This Skill Does
+
+Once installed, Claude automatically reads the relevant reference file(s) before answering your Flutter questions — giving you **production-grade code**, not toy examples.
+
+**Before this skill:** Generic code snippets, missing error handling, no architecture patterns.
+
+**After this skill:** Clean Architecture, proper DI, null-safe, tested, secure, optimized code — ready to ship.
+
+---
+
+## 💡 Example Prompts After Installing
 
 ```
-flutter-production/
-├── SKILL.md                  # Main skill entry point & decision guides
-└── references/
-    ├── architecture.md
-    ├── architecture_advanced.md
-    ├── ui.md
-    ├── state.md
-    ├── navigation.md
-    ├── networking.md
-    ├── networking_advanced.md
-    ├── backend.md
-    ├── auth_notifications.md
-    ├── storage.md
-    ├── security.md
-    ├── performance.md
-    ├── performance_advanced.md
-    ├── monetization.md
-    ├── localization.md
-    ├── testing.md
-    ├── cicd.md
-    ├── cicd_advanced.md
-    ├── device.md
-    ├── observability.md
-    ├── quality.md
-    ├── quality_advanced.md
-    ├── error_feedback.md
-    ├── flavors.md
-    ├── biometric.md
-    ├── lifecycle.md
-    ├── payments.md
-    ├── file_sharing.md
-    ├── local_notifications.md
-    ├── notifications_advanced.md
-    ├── accessibility.md
-    ├── deeplinks.md
-    ├── custom_painter.md
-    ├── data_sync.md
-    ├── analytics_advanced.md
-    ├── modularization.md
-    ├── ux_states.md
-    ├── store_readiness.md
-    ├── dart3.md
-    ├── force_update.md
-    ├── encrypted_storage.md
-    ├── realtime_protocols.md
-    ├── onboarding.md
-    ├── crash_reporting_advanced.md
-    └── http_caching.md
+"Show me a production GetX controller for VPN connection with error handling"
+"Set up Riverpod with Clean Architecture for a server list screen"
+"How do I implement SSL pinning with Dio in Flutter?"
+"Create a full Firebase Auth service with Google Sign-In and token refresh"
+"Show me how to set up GitHub Actions CI for Flutter with Play Store deployment"
+"Build an encrypted Hive service for storing user session data"
+"How do I add notification action buttons in Flutter?"
+"Set up Dart 3 sealed classes for auth states"
+"Create a paywall screen with RevenueCat in Flutter"
+"How do I implement stale-while-revalidate caching with Dio?"
 ```
 
 ---
 
-## 🗺️ Topic Reference Map
+## 🔧 Requirements
 
+- Claude.ai Pro, Team, or Enterprise plan (Skills feature)
+- Flutter 3.16+ (Dart 3.0+ for full feature coverage)
+
+---
+
+## 📚 45 Topics Covered
+
+### 🏗️ Architecture
 | Topic | File |
 |-------|------|
-| Architecture, Folder Structure, DI | `references/architecture.md` |
-| Mappers, UseCase Base, Result/Either | `references/architecture_advanced.md` |
-| UI, Layouts, Theming, Animations | `references/ui.md` |
-| State Management (GetX / Riverpod / BLoC / Provider) | `references/state.md` |
-| Navigation, Routing, Deep Linking | `references/navigation.md` |
-| Networking, REST, Dio, Serialization | `references/networking.md` |
-| Cancellation, Rate Limiting, Versioning | `references/networking_advanced.md` |
-| Firebase & Supabase Integration | `references/backend.md` |
-| Auth, Push Notifications, Real-time | `references/auth_notifications.md` |
-| Local Storage, Caching, Offline | `references/storage.md` |
-| Security (Obfuscation, SSL Pinning, Secure Storage) | `references/security.md` |
-| Performance & Optimization | `references/performance.md` |
-| Isolates, DevTools, List Virtualization | `references/performance_advanced.md` |
-| Ads & Monetization (AdMob, IAP, RevenueCat) | `references/monetization.md` |
-| Localization, ARB, RTL | `references/localization.md` |
-| Testing (Unit / Widget / Integration) | `references/testing.md` |
-| CI/CD, Deployment, App Signing | `references/cicd.md` |
-| Fastlane, Store Readiness, App Size | `references/cicd_advanced.md` |
-| Device Features, Platform Channels, Background | `references/device.md` |
-| Logging, Crash Reporting, Analytics | `references/observability.md` |
-| Code Quality, Linting, Packages | `references/quality.md` |
-| Custom Lint, Metrics, Naming | `references/quality_advanced.md` |
-| Error Handling & User Feedback | `references/error_feedback.md` |
-| App Flavors & Environments | `references/flavors.md` |
-| Biometric Auth (Fingerprint, Face ID) | `references/biometric.md` |
-| App Lifecycle & Background Handling | `references/lifecycle.md` |
-| Payment Gateways (Stripe, PayPal) | `references/payments.md` |
-| File Sharing & Export (PDF, Excel) | `references/file_sharing.md` |
-| Local & Scheduled Notifications | `references/local_notifications.md` |
-| Notification Actions, Background, Grouping | `references/notifications_advanced.md` |
-| Accessibility (Semantics, Contrast, RTL) | `references/accessibility.md` |
-| Deep Links & Dynamic Links | `references/deeplinks.md` |
-| Custom Painter & Canvas | `references/custom_painter.md` |
-| Data Sync, Conflict Resolution, DB Migration | `references/data_sync.md` |
-| Remote Config, Feature Flags, A/B Testing | `references/analytics_advanced.md` |
-| Modularization, Melos, Internal Packages | `references/modularization.md` |
-| UX States — Skeleton, Empty, Error, Paywall | `references/ux_states.md` |
-| Store Readiness — App Size, Startup, ASO | `references/store_readiness.md` |
-| Dart 3 — Records, Patterns, Sealed Classes | `references/dart3.md` |
-| Force Update & In-App Update | `references/force_update.md` |
-| Encrypted Local Storage (Hive, AES, SQLCipher) | `references/encrypted_storage.md` |
-| Realtime Protocols — MQTT, Socket.IO, SignalR | `references/realtime_protocols.md` |
-| Onboarding & First-Run Flows | `references/onboarding.md` |
-| Sentry & Datadog Crash Reporting | `references/crash_reporting_advanced.md` |
-| HTTP Response Caching — dio_cache_interceptor | `references/http_caching.md` |
+| Clean Architecture, MVVM, MVC, Repository, Use Cases, DI | `architecture.md` |
+| DTO↔Entity Mappers, UseCase Base Classes, Result/Either | `architecture_advanced.md` |
+| Modularization, Melos Monorepo, Internal Packages | `modularization.md` |
+
+### 🎛️ State Management
+| Topic | File |
+|-------|------|
+| GetX (Rx, Workers, Bindings), Riverpod (AsyncNotifier, StreamNotifier), BLoC (Sealed Events, Freezed States), Provider | `state.md` |
+
+### 🎨 UI / UX
+| Topic | File |
+|-------|------|
+| Responsive Design, Light/Dark Theming, Custom Widgets, Animations, Page Transitions | `ui.md` |
+| Skeleton Loading, Empty States, Error UX, Paywall Strategies | `ux_states.md` |
+| Custom Painter — Arc Gauges, Line Charts, Dashed Borders | `custom_painter.md` |
+| Accessibility — Semantics, Contrast, Screen Readers, Reduced Motion | `accessibility.md` |
+| Onboarding, Feature Discovery, What's New Dialog | `onboarding.md` |
+
+### 🧭 Navigation
+| Topic | File |
+|-------|------|
+| GoRouter, GetX Routing, Deep Links, Bottom Nav State | `navigation.md` |
+| App Links, Universal Links, Branch.io, Dynamic Links | `deeplinks.md` |
+
+### 🌐 Networking
+| Topic | File |
+|-------|------|
+| Dio Production Setup, Retry, Error Handling, JSON Serialization | `networking.md` |
+| Request Cancellation, Rate Limiting, API Versioning | `networking_advanced.md` |
+| HTTP Response Caching — dio_cache_interceptor, Stale-While-Revalidate | `http_caching.md` |
+
+### 🔥 Backend Integration
+| Topic | File |
+|-------|------|
+| Firebase (Firestore, Storage, Batch), Supabase (Auth, Realtime, RPC) | `backend.md` |
+| Email/Google/Phone Auth, FCM Push (all 3 app states), WebSockets, Supabase Realtime | `auth_notifications.md` |
+| MQTT, Socket.IO, SignalR, Raw WebSocket with Heartbeat & Reconnect | `realtime_protocols.md` |
+
+### 💾 Storage & Data
+| Topic | File |
+|-------|------|
+| SharedPreferences, Hive, SQLite, Cache-First Strategy, Offline Support | `storage.md` |
+| Encrypted Hive, AES-256-at-Rest, SQLCipher, Key Rotation | `encrypted_storage.md` |
+| Offline-First Sync, Conflict Resolution, SQLite DB Migrations | `data_sync.md` |
+
+### 🔐 Security
+| Topic | File |
+|-------|------|
+| Obfuscation, flutter_secure_storage, SSL Pinning, API Key Protection, Root Detection | `security.md` |
+| Biometric Auth — Fingerprint, Face ID, Auto-Lock, Settings Toggle | `biometric.md` |
+
+### ⚡ Performance
+| Topic | File |
+|-------|------|
+| const, ListView.builder, RepaintBoundary, compute(), Image Caching | `performance.md` |
+| Isolates, DevTools Profiling, List Virtualization, Pagination | `performance_advanced.md` |
+
+### 💰 Monetization
+| Topic | File |
+|-------|------|
+| AdMob + Yandex Unified Manager, Banner/Interstitial/Rewarded, GDPR | `monetization.md` |
+| Stripe PaymentSheet, Google Pay, Apple Pay, PayPal | `payments.md` |
+
+### 🔔 Notifications
+| Topic | File |
+|-------|------|
+| Full Local Notification Setup, Daily/Weekly Scheduled, In-App Banner | `local_notifications.md` |
+| Action Buttons, Background FCM Isolate, Notification Grouping, Rich Notifications | `notifications_advanced.md` |
+
+### 🌍 Localization
+| Topic | File |
+|-------|------|
+| ARB Files, 10 Languages, RTL Support, Locale Persistence | `localization.md` |
+
+### 🧪 Testing
+| Topic | File |
+|-------|------|
+| Unit Tests (mocktail, BLoC test, Riverpod container), Widget Tests, Golden Tests, Integration Tests | `testing.md` |
+
+### 🚀 CI/CD & Deployment
+| Topic | File |
+|-------|------|
+| GitHub Actions (test→build Android→build iOS→deploy), App Signing, ProGuard | `cicd.md` |
+| Fastlane, Automated Testing Pipeline, Flavor Builds, Store Automation | `cicd_advanced.md` |
+
+### 📊 Analytics & Observability
+| Topic | File |
+|-------|------|
+| Structured Logger, Firebase Crashlytics, Firebase Analytics, Screen Tracking | `observability.md` |
+| Remote Config, Feature Flags, A/B Testing, Funnel Tracking | `analytics_advanced.md` |
+| Sentry, Datadog — Non-Firebase Crash Reporting, RUM, Performance Monitoring | `crash_reporting_advanced.md` |
+
+### 📱 Device & Platform
+| Topic | File |
+|-------|------|
+| Camera, GPS, Platform Channels (Flutter↔Kotlin), WorkManager, Background Services, Sensors | `device.md` |
+| App Lifecycle, Privacy Overlay, Wakelock, Battery State, Network Reaction | `lifecycle.md` |
+
+### 📦 Configuration & Flavors
+| Topic | File |
+|-------|------|
+| dev/staging/prod AppConfig, Firebase per Flavor, VS Code Launch Configs | `flavors.md` |
+| Force Update Gate, In-App Update (Play Store API), Remote Config Versioning | `force_update.md` |
+
+### 🧹 Code Quality
+| Topic | File |
+|-------|------|
+| analysis_options.yaml, Flutter Lints, Formatting, Build Runner | `quality.md` |
+| Strict Analysis, Custom Lint Rules, dart_code_metrics, Naming Conventions | `quality_advanced.md` |
+
+### 🧩 UI Components & Patterns
+| Topic | File |
+|-------|------|
+| Error Boundary, FeedbackService (Snackbars/Dialogs/Loading Overlay), Empty/Error Widgets | `error_feedback.md` |
+| File Sharing, PDF Generation, Excel Export, Native File Open | `file_sharing.md` |
+
+### 🏪 Store Readiness
+| Topic | File |
+|-------|------|
+| App Size Analysis, Startup Optimization, ASO, Screenshots, In-App Review | `store_readiness.md` |
+
+### 🎯 Dart 3
+| Topic | File |
+|-------|------|
+| Records, Pattern Matching, Sealed Classes, Switch Expressions, Class Modifiers | `dart3.md` |
 
 ---
 
@@ -170,7 +200,7 @@ Every response guided by this skill follows these non-negotiable rules:
 
 ## 🧭 Quick Decision Guide
 
-### Architecture
+### Which Architecture?
 | Scenario | Choice |
 |----------|--------|
 | Complex app, team, multiple data sources | Clean Architecture |
@@ -178,7 +208,7 @@ Every response guided by this skill follows these non-negotiable rules:
 | Simple prototype | MVC |
 | Large app, independent features | Feature-first + Clean ✅ Recommended |
 
-### State Management
+### Which State Management?
 | Scenario | Choice |
 |----------|--------|
 | New project, testability matters | Riverpod ✅ |
@@ -222,7 +252,27 @@ lib/
 
 ---
 
-## 📌 How to Use This Skill
+## 📁 Repository Structure
+
+```
+flutter-production-skill/
+├── README.md
+├── flutter-production.skill       ← Install this in Claude
+└── flutter-production/            ← Source (for transparency / contributions)
+    ├── SKILL.md                   ← Master guide & routing table
+    └── references/
+        ├── architecture.md
+        ├── architecture_advanced.md
+        ├── state.md
+        ├── ui.md
+        ├── ux_states.md
+        ├── ... (45 files total)
+        └── dart3.md
+```
+
+---
+
+## 📌 How to Use (for Contributors / Developers)
 
 | Situation | Action |
 |-----------|--------|
@@ -234,12 +284,9 @@ lib/
 
 ---
 
-## 🏷️ Suggested Repo Details
+## 🤝 Contributing
 
-| Field | Value |
-|-------|-------|
-| **Name** | `flutter-production-skill` |
-| **Description** | Production-grade Flutter skill with 40+ reference guides covering architecture, state, security, CI/CD, and more |
-| **Topics / Tags** | `flutter`, `dart`, `clean-architecture`, `riverpod`, `getx`, `bloc`, `firebase`, `production`, `mobile`, `skill` |
+Found a gap? Open a PR adding a new reference file or improving an existing one.
 
----
+Format: follow the existing reference file structure — code-first, production patterns only, no toy examples.
+
