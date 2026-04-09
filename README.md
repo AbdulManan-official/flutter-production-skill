@@ -12,6 +12,38 @@ Whether you're building a solo utility app or a large-scale enterprise product, 
 
 ---
 
+## 🎯 What This Skill Covers
+
+This skill triggers on **any** Flutter question across all of these domains:
+
+| Category | Topics |
+|----------|--------|
+| **Architecture** | Clean Architecture, MVVM, MVC, Feature-first |
+| **State Management** | GetX, Riverpod, BLoC, Provider |
+| **UI & Design** | Layouts, responsive design, theming, animations, Custom Painter |
+| **Navigation** | GoRouter, deep linking, dynamic links |
+| **Networking** | REST APIs, Dio, serialization, caching, rate limiting |
+| **Backend** | Firebase, Supabase, real-time, MQTT, Socket.IO, SignalR |
+| **Authentication** | OAuth, biometric (fingerprint/Face ID), FCM push notifications |
+| **Storage** | Local storage, caching, offline support, Hive, SQLCipher, AES |
+| **Security** | Code obfuscation, SSL pinning, `flutter_secure_storage` |
+| **Performance** | Isolates, DevTools, list virtualization, startup time |
+| **Monetization** | AdMob, Yandex Ads, in-app purchases, RevenueCat, Stripe, PayPal |
+| **Localization** | ARB files, RTL support, multi-language |
+| **Notifications** | FCM, local/scheduled, background, grouped, action buttons |
+| **Testing** | Unit, widget, integration tests |
+| **CI/CD** | GitHub Actions, Codemagic, Fastlane, app signing |
+| **Deployment** | Play Store, App Store, ASO, app size, startup optimization |
+| **Device Features** | Camera, GPS, platform channels, background services |
+| **Observability** | Logging, Crashlytics, Sentry, Datadog, analytics |
+| **Code Quality** | Linting, custom lint rules, metrics, naming conventions |
+| **Dart 3** | Records, patterns, sealed classes, switch expressions |
+| **UX Patterns** | Skeleton screens, empty states, error states, paywall strategy |
+| **Onboarding** | Feature discovery, first-run flows |
+| **Modularization** | Melos, internal packages, mono-repo setup |
+
+---
+
 ## 📁 Repository Structure
 
 ```
@@ -161,30 +193,30 @@ Every response guided by this skill follows these non-negotiable rules:
 ```
 lib/
 ├── core/
-│   ├── constants/       # AppColors, AppSizes, AppStrings, AppRoutes
-│   ├── errors/          # Failures, Exceptions
-│   ├── network/         # DioClient, NetworkInfo, Interceptors
-│   ├── services/        # SecureStorageService, AnalyticsService
-│   ├── theme/           # AppTheme, dark/light ThemeData
-│   ├── utils/           # Extensions, Helpers, Validators
-│   └── di/              # Dependency injection setup
+│   ├── constants/         # AppColors, AppSizes, AppStrings, AppRoutes
+│   ├── errors/            # Failures, Exceptions
+│   ├── network/           # DioClient, NetworkInfo, Interceptors
+│   ├── services/          # SecureStorageService, AnalyticsService, etc.
+│   ├── theme/             # AppTheme, dark/light ThemeData
+│   ├── utils/             # Extensions, Helpers, Validators
+│   └── di/                # Dependency injection setup
 ├── features/
 │   └── [feature_name]/
 │       ├── data/
-│       │   ├── datasources/
-│       │   ├── models/
-│       │   └── repositories/
+│       │   ├── datasources/   # Remote & Local data sources
+│       │   ├── models/        # DTO models with fromJson/toJson
+│       │   └── repositories/  # Repository implementations
 │       ├── domain/
-│       │   ├── entities/
-│       │   ├── repositories/
-│       │   └── usecases/
+│       │   ├── entities/      # Pure Dart entities
+│       │   ├── repositories/  # Abstract repository interfaces
+│       │   └── usecases/      # Single-responsibility use cases
 │       └── presentation/
-│           ├── screens/
-│           ├── widgets/
-│           ├── controllers/
-│           └── bindings/
-├── l10n/
-├── generated/
+│           ├── screens/       # Full screen widgets
+│           ├── widgets/       # Reusable UI components
+│           ├── controllers/   # GetX controllers / Notifiers / Cubits
+│           └── bindings/      # GetX bindings (if using GetX)
+├── l10n/                  # ARB localization files
+├── generated/             # build_runner output (freezed, json, l10n)
 └── main.dart
 ```
 
@@ -192,11 +224,13 @@ lib/
 
 ## 📌 How to Use This Skill
 
-- **Before writing any code** → read the relevant reference file
-- **Choosing packages** → check `references/quality.md`
-- **Security questions** → always read `references/security.md` fully
-- **Performance issues** → read `references/performance.md` before suggesting fixes
-- **Multiple topics** → read all relevant reference files
+| Situation | Action |
+|-----------|--------|
+| Writing **any** code | Read the relevant reference file first |
+| Choosing packages | Check `references/quality.md` for recommended pub.dev packages |
+| Security question | Always read `references/security.md` **fully** |
+| Performance issue | Read `references/performance.md` before suggesting solutions |
+| Multiple topics in one request | Read **all** relevant reference files |
 
 ---
 
@@ -209,7 +243,3 @@ lib/
 | **Topics / Tags** | `flutter`, `dart`, `clean-architecture`, `riverpod`, `getx`, `bloc`, `firebase`, `production`, `mobile`, `skill` |
 
 ---
-
-## 📄 License
-
-This skill is provided for educational and development use. See `LICENSE` for details.
