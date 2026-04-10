@@ -43,7 +43,7 @@ Once installed, Claude automatically reads the relevant reference file(s) before
 
 ## 🔧 Requirements
 
-- Claude.ai Pro, Team, or Enterprise plan (Skills feature)
+- Claude.ai Free, Pro, Team, or Enterprise plan (Skills feature)
 - Flutter 3.16+ (Dart 3.0+ for full feature coverage)
 
 ---
