@@ -8,7 +8,7 @@ Built by **Abdul Manan** — Flutter Developer
 
 ## ⚡ Install in 3 Steps
 
-1. Clone repo file
+1. Download repo file
 2. Go to **Claude.ai → Settings → Skills → Upload Skill**
 3. Done — Claude now answers every Flutter question at production level
 
