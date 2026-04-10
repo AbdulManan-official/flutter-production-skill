@@ -2,13 +2,13 @@
 
 > The most complete Flutter production skill for Claude AI — 45 reference files covering every aspect of building, shipping, and maintaining real-world Flutter apps.
 
-Built by **Abdul Manan** — Flutter Developer 
+Built by **Abdul Manan** — Flutter Developer
 
 ---
 
 ## ⚡ Install in 3 Steps
 
-1. Download repo file
+1. Go to the [**Latest Release**](../../releases/latest) and download `flutter-production.skill`
 2. Go to **Claude.ai → Settings → Skills → Upload Skill**
 3. Done — Claude now answers every Flutter question at production level
 
@@ -257,17 +257,18 @@ lib/
 ```
 flutter-production-skill/
 ├── README.md
-├── flutter-production.skill       ← Install this in Claude
-└── flutter-production/            ← Source (for transparency / contributions)
+├── flutter-production.skill       ← Download & install in Claude
+└── flutter-production/            ← Source files (read & contribute)
     ├── SKILL.md                   ← Master guide & routing table
     └── references/
         ├── architecture.md
-        ├── architecture_advanced.md
         ├── state.md
         ├── ui.md
-        ├── ux_states.md
-        ├── ... (45 files total)
-        └── dart3.md
+        ├── networking.md
+        ├── security.md
+        ├── testing.md
+        ├── performance.md
+        └── ... (45 files total)
 ```
 
 ---
@@ -290,3 +291,8 @@ Found a gap? Open a PR adding a new reference file or improving an existing one.
 
 Format: follow the existing reference file structure — code-first, production patterns only, no toy examples.
 
+---
+
+## 🏷️ Topics
+
+`flutter` `dart` `claude-ai` `claude-skill` `clean-architecture` `riverpod` `getx` `bloc` `firebase` `production` `mobile` `android` `ios`
